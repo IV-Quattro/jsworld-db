@@ -1,0 +1,184 @@
+
+GET http://localhost:3003/events HTTP/1.1
+###
+
+GET http://localhost:3003/tracks?idEvent=1&dataTrack=February8th2023 HTTP/1.1
+###
+
+GET http://localhost:3003/speakers HTTP/1.1
+###
+
+POST http://localhost:3003/
+Content-Type: application/json
+
+{
+    "id": 1,
+    "events":[
+        {
+            "id": 1,
+            "titolo": " #1 JAVASCRIPT CONFERENCE ON THE PLANET",
+            "descrizione": "A 3-day JavaScript Celebration together with 2139 JavaScript Developers. Packed with the Latest JavaScript Updates by Authors, Creators and Experts. 45 talks to stay on top of the latest topics like Vue3, Angular 15, React 18, Qwik, Vite, AuthZ, Demystifying Protocol Buffers and gRPC. Your chance get in touch with Creators and Maintainers from Vue, Astro, Nuxt, Angular, Vite and Storybook. You will be provided with technical updates on the largest and hottest technologies alongside case studies on how to tackle your developer challenges. Purchase your 1 day ticket valid on 8th February to be provided with a wide Variety of 15 unique pieces of content helping you make good choices as a JavaScript Developer Join for 3 Full Days on 8,9 and 10 February and also be part of the Largest and Most Special Vue Conference on the Planet, Vuejs Amsterdam attended by the Creator of Vite and Vue, Evan You and Core Team members bringing you the latest in Vue's Eco System"
+        },
+        {
+            "id": 2,
+            "titolo": " #1 JAVASCRIPT CONFERENCE ON THE PLANET",
+            "descrizione": "A 3-day JavaScript Celebration together with 2139 JavaScript Developers. Packed with the Latest JavaScript Updates by Authors, Creators and Experts. 45 talks to stay on top of the latest topics like Vue3, Angular 15, React 18, Qwik, Vite, AuthZ, Demystifying Protocol Buffers and gRPC. Your chance get in touch with Creators and Maintainers from Vue, Astro, Nuxt, Angular, Vite and Storybook. You will be provided with technical updates on the largest and hottest technologies alongside case studies on how to tackle your developer challenges. Purchase your 1 day ticket valid on 8th February to be provided with a wide Variety of 15 unique pieces of content helping you make good choices as a JavaScript Developer Join for 3 Full Days on 8,9 and 10 February and also be part of the Largest and Most Special Vue Conference on the Planet, Vuejs Amsterdam attended by the Creator of Vite and Vue, Evan You and Core Team members bringing you the latest in Vue's Eco System"
+    
+        }
+    ],
+    "tracks":[
+        {
+            "id": 1,
+            "idEvent": 1,
+            "dataTrack": "February 8th 2023",
+            "orario": "9:37 - 10:04",
+            "titolo": "All About React 18",
+            "descrizione": "Meta Engineer Aashima will tell us everything about React 18. This talk will focus on the new features introduced in React18, like Concurrency, Automatic Batching, Transitions, New Suspense & Server components. Where you will learn about how to upgrade your app to React 18, learn about concurrent rendering, automatic batching, use new hooks introduced useTransition and useDeferredValue, Replace useEffect with Suspense, Build application using server components and Improve bundle size with React server components.",
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=100"    
+        },
+        {
+            "id": 2,
+            "idEvent": 1,
+            "dataTrack": "February 8th 2023",
+            "orario": "10:31 - 10:58",
+            "titolo": "State of Storybook 7",
+            "descrizione": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
+            "immagine": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
+        },
+        {
+            "id": 3,
+            "idEvent": 1,
+            "dataTrack": "February 9th 2023",
+            "orario": "9:37 - 10:04",
+            "titolo": "The Complete Guide to packaging Libraries",
+            "descrizione": "Learn everything you need to know about packaging and publishing your own libraries as an open-source npm package in this comprehensive guide.",
+            "immagine": "https://images.jsworldconference.com/Aurelie_violette_23e8227eb1.jpeg?width=100"
+                
+        },
+        {
+            "id": 4,
+            "idEvent": 1,
+            "dataTrack": "February 9th 2023",
+            "orario": "9:10 - 9:37",
+            "titolo": "Alive and Kicking. A Vue into Rock& Roll!",
+            "descrizione": "Rock & roll is alive and kicking and in this talk I will showcase that Vue is so versatile it can be used to do audio visualisations while rock guitar soars through the browser. The audience will have access to a vue application which allows them to vote for a song to be played live on stage. The screen shows all the votes and I play them as they come up. While playing music meta data is shown and an audio visualisation plays while I’m rocking on stage. The more votes a song gets, the higher it shows on the list and the more chance I’ll play it. The whole experience is created using Vue and Uniform. Next to waking the audience up with some spicy rock& roll, I will explain how the software was build and why Vue is such an important technology for composable architectures with multiple channels",
+            "immagine": "https://images.jsworldconference.com/IMG_0144_1_Tim_Benniks_c88dd0365e.jpg?width=100"
+                
+        },
+        {
+            "id": 5,
+            "idEvent": 1,
+            "dataTrack": "February 10th 2023",
+            "orario": "9:15 - 10:00",
+            "titolo": "State of the Vuenion 2023",
+            "descrizione": "After 3 years, returning in person to Amsterdam to bring us the Annual Anticipated State of The Vuenion with new exciting news from the Vue Eco System, a talk you can not miss brought by the creator of Vue and Vite, Evan You",
+            "immagine": "https://images.jsworldconference.com/evan_you_dbb7df8b53.webp"
+                
+        },
+        {
+            "id": 6,
+            "idEvent": 1,
+            "dataTrack": "February 10th 2023",
+            "orario": "12:11 - 12:38",
+            "titolo": "What you'll love about Vue in 2023",
+            "descrizione": "A lot has happened last year for the Vue.js ecosystem. As Vue 3 became the new default, a complete re-write of the docs boasted newly recommended tooling like Vite and Pinia. After much anticipation, Nuxt 3 was released with amazing developer conveniences, TS support, and server side functionality baked in. In this talk, we’ll take a tour of what all happened in 2022 and how it positions you to create your best web-apps in 2023! Get a top down view of the latest tooling. Get insight into the coolest new libraries & practices with LIVE examples. Learn about up-to-date resources and events in the community. And more.",
+            "immagine": "https://images.jsworldconference.com/Alex_Kyriakidis_5fd4b088e7.jpeg?width=100"
+        }
+    ],
+    "speakers": [
+        {
+            "id": 1,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/Fred_Schott_dcab743f6b.jpg?width=380",
+            "nome": "Fred K. Schott",
+            "specializzazione": "Creator of Astro",
+            "descrizione": "By the Creator of Astro, what is new in 2023 and how to Build faster websites. Essentially a buil"
+        },
+        {
+            "id": 2,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=380",
+            "nome": "Aashima Ahuja",
+            "specializzazione": "Engineer at Meta | React 18",
+            "descrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam."
+        }
+    ]
+}
+
+###
+
+POST http://localhost:3003/speakers
+Content-Type: application/json
+
+
+    [
+        {
+            "id": 3,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/Fred_Schott_dcab743f6b.jpg?width=380",
+            "nome": "Fred K. Schott",
+            "specializzazione": "Creator of Astro",
+            "descrizione": "By the Creator of Astro, what is new in 2023 and how to Build faster websites. Essentially a buil"
+        },
+        {
+            "id": 4,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=380",
+            "nome": "Aashima Ahuja",
+            "specializzazione": "Engineer at Meta | React 18",
+            "descrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam."
+        },
+        {
+            "id": 5,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/Fred_Schott_dcab743f6b.jpg?width=380",
+            "nome": "Fred K. Schott",
+            "specializzazione": "Creator of Astro",
+            "descrizione": "By the Creator of Astro, what is new in 2023 and how to Build faster websites. Essentially a buil"
+        },
+        {
+            "id": 6,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=380",
+            "nome": "Aashima Ahuja",
+            "specializzazione": "Engineer at Meta | React 18",
+            "descrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam."
+        },
+        {
+            "id": 7,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/Fred_Schott_dcab743f6b.jpg?width=380",
+            "nome": "Fred K. Schott",
+            "specializzazione": "Creator of Astro",
+            "descrizione": "By the Creator of Astro, what is new in 2023 and how to Build faster websites. Essentially a buil"
+        },
+        {
+            "id": 8,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=380",
+            "nome": "Aashima Ahuja",
+            "specializzazione": "Engineer at Meta | React 18",
+            "descrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam."
+        },
+        {
+            "id": 9,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/Fred_Schott_dcab743f6b.jpg?width=380",
+            "nome": "Fred K. Schott",
+            "specializzazione": "Creator of Astro",
+            "descrizione": "By the Creator of Astro, what is new in 2023 and how to Build faster websites. Essentially a buil"
+        },
+        {
+            "id": 10,
+            "idEvent": 1,
+            "immagine": "https://images.jsworldconference.com/aashima_ahuja_a519e003cf.jpg?width=380",
+            "nome": "Aashima Ahuja",
+            "specializzazione": "Engineer at Meta | React 18",
+            "descrizione": "Frontend Engineer at Meta talking about React. Frontend Content Creator based in Amsterdam."
+        }
+    ]
+###
+
+DELETE http:/
+/localhost:3003/
+###
